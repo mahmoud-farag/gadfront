@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0
+}
+#root{
+
+  /* background-color: brown; */
+  height: 100vh;
+}
+
+/* header styling */
+.header{
+  /* height: 4rem;
+  padding-right: 2rem;
+  padding-left:2rem;  
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+  text-align: center; */
+}
+
+.card p{
+  border-top: 2px solid black
+}
+img{
+  width:10rem;
+  height: 8rem;
+}
+
+
+a{
+text-decoration: none;
+color:#fff
+}
+
+
+/* clinik_container */
+
+.clinik_container{
+  /* background-color: darkorange; */
+  padding-top: 2rem;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+.search{
+  background-color: red;
+    color: black;
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+    border-radius: .9rem;
+}
+ul{
+   list-style: none;
+   /* background-color: seagreen; */
+   padding:.5rem;
+   margin-bottom:.5rem;
+
+}
+.total_Unpaied_sessions{
+  background-color: seashell;
+  margin-bottom: 1rem;
+}
+
+
+
+.patients span:first-child,
+.patients span:nth-child(2){
+  border-right:3px solid black;
+  padding-right: .4rem;
+  margin-right: .3rem;
+}
+
+
+@media screen and (max-width: 640px) { 
+  .patients span:first-child,
+  .patients span:nth-child(2){
+    border-bottom:3px solid black;
+    border-right:none;
+    margin-bottom:.3rem;
+    padding-bottom:.3rem;
+    padding-left:.4rem
+    
+  }
+  }
