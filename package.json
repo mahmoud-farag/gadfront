@@ -1,6 +1,6 @@
 {
   "name": "alamlcenterfront",
-  "proxy": "https://gadapi.herokuapp.com/",
+  "homePage": "https://gadapi.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

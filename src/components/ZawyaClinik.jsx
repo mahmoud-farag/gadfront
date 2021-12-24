@@ -45,7 +45,7 @@ export default function ZawyaClinik({changeState}) {
                  </Link>
              <ul className='mt-4  zawya_patients patients'>
                  {patients &&(patients.map((patient)=>
-                 <li className='p-2 rounded-lg shadow-2xl shadow-blue-300 text-gray-200 mb-3  flex flex-col flex-evenly sm:flex-row  sm:justify-between bg-blue-700'
+                 <li className='p-2 rounded-lg shadow-md shadow-blac9k-900 text-black-00 mb-3  flex flex-col flex-evenly sm:flex-row  sm:justify-between bg-white'
                      key ={patient._id}>
                      <span className=''>{patient.name}</span>
                      <span>Unpaied:{patient.unPaiedSessions}*{patient.sessionPrice}={patient.unPaiedSessions*patient.sessionPrice} L.E  </span>

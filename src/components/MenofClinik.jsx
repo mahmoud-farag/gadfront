@@ -48,7 +48,7 @@ export default function  MenofClinik({changeState}) {
                 </Link>
                 <ul className=' mt-4   menof_patients patients'>
                     {patients &&(patients.map((patient)=>
-                    <li className='p-2 rounded-lg shadow-2xl shadow-blue-300 text-gray-200 mb-3 flex flex-col flex-evenly sm:flex-row  sm:justify-between bg-blue-700' key ={patient._id}>
+                    <li className='p-2 rounded-lg shadow-md shadow-black-900 text-black-800 mb-3 flex flex-col flex-evenly sm:flex-row  sm:justify-between bg-white' key ={patient._id}>
                         <span>{patient.name}</span>
                         <span>Unpaied: {patient.unPaiedSessions}*{patient.sessionPrice} = {patient.unPaiedSessions*patient.sessionPrice}L.E  </span>
                         <div className="btns flex justify-between ">
