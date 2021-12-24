@@ -53,8 +53,8 @@ export default function PatientDetails(props) {
       const updatedPatient = { name,clinik,totalSessions,paiedSessions,unPaiedSessions,sessionPrice  }
 
       try {
-         await axios.patch(`/api/v1/patient/${patient._id}`, updatedPatient);
-        console.log(patient) 
+         await axios.patch(`https://gadapi.herokuapp.com/api/v1/patient/${patient._id}`, updatedPatient);
+        // console.log(patient) 
         navigate(`/${patient.clinik ==='منوف'? 'menof': 'zawya'}`);
       } catch (error) {
           console.log(error.message);
@@ -63,7 +63,8 @@ export default function PatientDetails(props) {
    
     return (
         <div className='patient_details_container bg-gray-100 flex justify-center items-center '>
-           {loading?(<h1 >Loading...</h1>):
+           {loading?(<h1 className=' font-bold text-2xl text-green-800'>Loading......</h1>)
+            :
 
              error? (<h2>{error.response.data}</h2>) :
               patient&& (

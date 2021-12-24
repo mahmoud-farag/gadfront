@@ -11,7 +11,7 @@ export default function DeletePatinet({patientId, clinik, changeState}) {
     const deletePatient =async()=>{
              
             // deteletPatientAction(patientId)
-               await axios.delete(`/api/v1/patient/${patientId}`);
+               await axios.delete(`https://gadapi.herokuapp.com/api/v1/patient/${patientId}`);
             //   navigate(clinik==='الزاوية'? '/zawya': '/menof')
             changeState()
        
