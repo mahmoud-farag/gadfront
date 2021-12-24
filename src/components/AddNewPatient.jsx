@@ -24,7 +24,7 @@ export default function AddNewPatient(props) {
          let newPatient =  {name, clinik,totalSessions, paiedSessions,unPaiedSessions,sessionPrice}
             try {
                 // console.log(newPatient)
-                     await axios.post(`/api/v1/patient`, newPatient); 
+                     await axios.post(`https://gadapi.herokuapp.com/api/v1/patient`, newPatient); 
                     // console.log(data)
             } catch (error) {
                 console.log(error.message);
