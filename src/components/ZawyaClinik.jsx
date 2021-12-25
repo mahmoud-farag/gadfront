@@ -18,7 +18,7 @@ export default function ZawyaClinik({changeState}) {
    },[dispatch,changeState]);
  
     return (
-        <div className='font-mono zawya_clink clinik_container'>
+        <div className='font-mono zawya_clink clinik_container flex flex-col h-auto pb-8  itmes-center'>
         {loading ?
         (<h1 className=' font-bold text-2xl text-green-800'>Loading......</h1>)
         : error? 

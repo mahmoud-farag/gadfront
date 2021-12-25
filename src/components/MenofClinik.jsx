@@ -21,11 +21,11 @@ export default function  MenofClinik({changeState}) {
     },[dispatch,changeState])
 
     return (
-       <div className=' font-mono menof_clink clinik_container  '>
+       <div className=' font-mono menof_clink clinik_container flex flex-col h-auto pb-8  itmes-center '>
            {loading ?
         (<h1 className=' font-bold text-2xl text-green-800'>Loading......</h1>)
         : error? 
-             ( <>
+             ( <div className="bg-red-500 ">
                  <h2 className='mb-6 font-bold text-mono text-2xl text-yellow-600'>عيادة منوف</h2>
                  <h2 className=' font-bold text-2xl text-red-800' >{error.response.data}</h2>
                  <Link className=' mt-5 ' to='/newpatient?clinik=menof'>
@@ -34,7 +34,7 @@ export default function  MenofClinik({changeState}) {
                     </span>
                  </Link>
                
-                </>  )
+                </div>  )
             :(
              <>
                 {/* <div className='search'>    
@@ -46,7 +46,7 @@ export default function  MenofClinik({changeState}) {
                         adding new patient
                     </span>
                 </Link>
-                <ul className=' mt-4   menof_patients patients'>
+                <ul className=' mt-4   menof_patients patients '>
                     {patients &&(patients.map((patient)=>
                     <li className='p-2 rounded-lg shadow-md shadow-black-900 text-black-800 mb-3 flex flex-col flex-evenly sm:flex-row  sm:justify-between bg-white' key ={patient._id}>
                         <span>{patient.name}</span>
